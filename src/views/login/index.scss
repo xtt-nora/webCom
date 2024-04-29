@@ -1,0 +1,264 @@
+.login {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #fff;
+
+  &-header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 80px;
+  }
+
+  &-li {
+    width: 120px;
+    height: 48px;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
+    @include center;
+
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  &-get {
+    position: fixed;
+    top: 30px;
+    right: 80px;
+    z-index: 999;
+    width: 160px;
+    color: #fff;
+    background-color: black;
+    border-radius: 10px;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
+    @include center;
+  }
+
+  &-get:hover {
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+  }
+
+  &-out {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 80px;
+    margin-top: 30px;
+    font-size: 48px;
+    font-weight: bolder;
+    line-height: 80px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #5551ff;
+    border-radius: 10px;
+  }
+
+  &-out:hover {
+    box-shadow:
+      0 12px 16px 0 rgb(0 0 0 / 24%),
+      0 17px 50px 0 rgb(0 0 0 / 19%);
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+
+    svg {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+
+  &-right {
+    ul {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+    }
+  }
+
+  .section-1 {
+    margin: 20px 10vw;
+  }
+
+  .section-1-img {
+    margin: 50px 0;
+  }
+
+  .section-1-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &-slogan {
+    max-width: min(700, 75vw);
+    margin: 0 50px;
+  }
+
+  .font {
+    height: 48px;
+    font-size: 24px;
+    line-height: 48px;
+  }
+
+  .font-blod {
+    font-size: 75px;
+    font-weight: bolder;
+  }
+
+  .font-slogan {
+    font-size: 75px;
+  }
+
+  #wrap {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+    font-size: 24px;
+    white-space: nowrap;
+  }
+
+  #first {
+    display: inline-block;
+    margin: 0 20px;
+  }
+
+  #inner {
+    position: absolute;
+    animation: slide 15s linear infinite;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .section-div {
+    margin: 55px 0 0;
+    // background-color: #fbfd5d;
+    .section-2,
+    .section-3,
+    .section-4,
+    .section-5 {
+      padding: 90px 10vw 0;
+      border-bottom: 1px solid #b4b650;
+    }
+
+    .section-2-p {
+      font-size: 20px;
+      font-weight: bolder;
+    }
+
+    .section-2-h1 {
+      font-size: 72px;
+      font-weight: bolder;
+    }
+
+    .section-2-big {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    .section-2-note {
+      width: 16vw;
+      margin: 0 2vw;
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    .section-2-img {
+      flex: 1;
+    }
+  }
+
+  .start-login {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 90px 10vw 0;
+    color: #fff;
+    background-color: black;
+
+    h2 {
+      width: 30vw;
+      font-size: 72px;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 10vw;
+      height: 55px;
+      padding: 20px;
+      font-size: 55px;
+      line-height: 55px;
+      cursor: pointer;
+      background-color: #5551ff;
+      border-radius: 10px;
+    }
+
+    div:hover {
+      animation: pulse; /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 1s; /* don't forget to set a duration! */
+    }
+  }
+
+  .div-footer {
+    color: #fff;
+    background-color: black;
+
+    .footer {
+      display: grid;
+      grid-template-columns: repeat(5, 20%);
+      gap: 48px 0;
+      max-width: 1200px;
+      padding-block: 160px;
+      margin: 0 auto;
+
+      h2 {
+        margin: 0 0 16px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #fff;
+      }
+    }
+
+    .footer-ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      -webkit-box-align: flex-start;
+      -ms-flex-align: flex-start;
+    }
+  }
+}

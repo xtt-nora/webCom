@@ -1,0 +1,12 @@
+{
+    "code": 200,
+    "data": {
+        "id":221,
+        "type":"software",
+        "src": "https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png",
+        "title": "金蝶软件",
+        "album":["https://mydown.yesky.com/uploadImages/2021/285/15/U94M7DXO5930.png","https://mydown.yesky.com/uploadImages/2021/285/15/6O8PRG0300WL.png","https://mydown.yesky.com/uploadImages/2021/285/15/2DCWTIA92V47.png","https://mydown.yesky.com/uploadImages/2021/285/15/2DCWTIA92V47.png"]
+    },
+    "msg": "成功"
+  }
+  

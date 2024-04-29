@@ -1,0 +1,54 @@
+@mixin mediumFont {
+  *font-size: 11px;
+  font-weight: 500px;
+  transform: scale(0.92, 0.92);
+}
+
+@mixin smallFont {
+  *font-size: 10px;
+  font-weight: 500px;
+  transform: scale(0.92, 0.92);
+}
+
+@mixin normalFont {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+@mixin largeFont {
+  font-size: 20px;
+  font-weight: 500px;
+}
+
+@mixin largeFontBlod {
+  font-size: 24px;
+  font-weight: 800px;
+}
+// flex-between
+@mixin spaceBetween {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+// flex-center
+@mixin center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+// 竖向靠左
+@mixin flexStart {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+// 横向靠左
+@mixin flexRStart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}

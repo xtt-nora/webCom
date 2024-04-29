@@ -1,0 +1,23 @@
+.headerLeft {
+  display: flex;
+}
+.header {
+  @include mediumFont;
+  padding: 10px 5px;
+  margin-right: 10px;
+  height: $height;
+  line-height: $height;
+  cursor: pointer;
+  &-button {
+    padding: 0 10px;
+  }
+  &-button:hover {
+    // font-weight: bolder;
+  }
+  .is-bold {
+    // font-weight: bolder;
+    // background-color: $focus-color;
+    background-color: var(--menu-focus);
+    border-radius: 10px;
+  }
+}

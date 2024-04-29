@@ -1,0 +1,16 @@
+dist
+node_modules
+public
+.husky
+.vscode
+.idea
+*.sh
+*.md
+src/assets
+/dist/*
+.local
+/node_modules/**
+**/*.svg
+**/*.sh
+/public/*
+stats.html

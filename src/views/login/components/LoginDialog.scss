@@ -1,0 +1,47 @@
+::v-deep .el-dialog {
+  padding: 35px 15px;
+  border-radius: 15px;
+}
+::v-deep .el-form-item {
+  margin-bottom: 20px;
+  //   border: 2px solid black;
+}
+::v-deep .el-input__wrapper {
+  box-shadow: 0 0 0 2px black inset;
+}
+::v-deep .is-focus {
+  box-shadow: 0 0 0 2px #2969e3 inset;
+}
+::v-deep .el-dialog__body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+}
+::v-deep .el-form {
+  width: 80%;
+}
+::v-deep .el-form-item__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+}
+.dialog-footer {
+  cursor: pointer;
+  width: 40%;
+  display: flex;
+  font-size: 1.25vw;
+  line-height: 2.08333vw;
+  border-radius: 0.26042vw;
+  background-color: black;
+  color: #fff;
+  /* display: flex; */
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}

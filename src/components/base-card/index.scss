@@ -1,0 +1,145 @@
+.base-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  overflow-y: auto;
+}
+.base-card {
+  /*IE无法设置浏览器的宽度、高度，只能隐藏，并不影响滑动*/
+  -ms-scroll-chaining: chained;
+  -ms-overflow-style: none;
+  -ms-content-zooming: zoom;
+  -ms-scroll-rails: none;
+  -ms-content-zoom-limit-min: 100%;
+  -ms-content-zoom-limit-max: 500%;
+  -ms-scroll-snap-type: proximity;
+  -ms-scroll-snap-points-x: snapList(100%, 200%, 300%, 400%, 500%);
+  -ms-overflow-style: none;
+  /*滚动条滑块按钮的颜色*/
+  scrollbar-face-color: #c7c7c7;
+  /*滚动条整体颜色*/
+  scrollbar-highlight-color: #c7c7c7;
+  /*滚动条轨道颜色*/
+  scrollbar-track-color: #c7c7c7;
+  /*三角箭头的颜色*/
+  scrollbar-arrow-color: #fff;
+  /*滚动条阴影*/
+  scrollbar-shadow-color: #c7c7c7;
+  /*滚动条3d亮色阴影边框的外观颜色——左边和上边的阴影色*/
+  scrollbar-3dlight-color: #c7c7c7;
+  /*滚动条3d暗色阴影边框的外观颜色——右边和下边的阴影色*/
+  scrollbar-darkshadow-color: #c7c7c7;
+  /*滚动条基准颜色*/
+  scrollbar-base-color: #c7c7c7;
+}
+/* -ms代表IE浏览器私有属性 -webkit代表chrome、safari私有属性  滚动条整体部分，可以设置宽度等*/
+.base-card::-webkit-scrollbar {
+  background-color: #c7c7c7;
+  width: 5px;
+  height: 2px;
+}
+/*滚动条的轨道*/
+.base-card::-webkit-scrollbar-track {
+  background-color: var(--menu-focus);
+  border-radius: 10px;
+}
+/*滚动条的滑块按钮*/
+.base-card::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #c7c7c7;
+}
+::v-deep .el-card__body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.card {
+  // width: 210px;
+  width: 18%;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  margin: 10px 30px 10px 0;
+  border-radius: $br;
+  position: relative;
+  .collect {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    // background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  // background-color: var(--menu-focus);
+  &-img {
+    width: 80px;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: $br;
+    }
+  }
+  &-content {
+    // padding: 15px 5px 0 0;
+    // flex: 1;
+    // display: flex;
+    // flex-direction: column;
+    // flex-wrap: nowrap;
+    // justify-content: flex-start;
+    // position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    position: relative;
+    padding: 0 0 0 10px;
+    &-title {
+      font-weight: bolder;
+    }
+    &-note {
+      // font-size: 12px;
+      @include smallFont;
+      display: -webkit-box;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-wrap: break-word;
+      white-space: normal !important;
+      -webkit-line-clamp: 2; /* 控制在第几行进行加省略号 */
+      -webkit-box-orient: vertical;
+      margin: 2px;
+    }
+    &-author,
+    &-create,
+    &-tag {
+      font-size: 12px;
+      color: #909399;
+    }
+    .tagItem {
+      display: inline-block;
+      margin-right: 2px;
+      font-size: 12px;
+      // margin-top: 5px;
+    }
+    &-jump {
+      position: absolute;
+      cursor: pointer;
+      right: 5px;
+      bottom: 0;
+      padding: 2px 10px;
+      border-radius: $br;
+      background-color: #ebf6ff;
+    }
+  }
+}

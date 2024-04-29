@@ -1,0 +1,110 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "path": "/home",
+      "name": "home",
+      "component": "/home/index",
+      "meta": {
+        "icon": "HomeFilled",
+        "title": "导航链接",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": true,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/home/homeData",
+          "name": "homeData",
+          "component": "/home/homeData/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "使用 home",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/software",
+      "name": "software",
+      "component": "/software/index",
+      "meta": {
+        "icon": "HomeFilled",
+        "title": "软件下载",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": true,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/software/softwareData",
+          "name": "softwareData",
+          "component": "/software/softwareData/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "使用 software",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/article",
+      "name": "article",
+      "component": "/article/index",
+      "meta": {
+        "icon": "HomeFilled",
+        "title": "资料下载",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": true,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/article/articleData",
+          "name": "articleData",
+          "component": "/article/articleData/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "使用 article",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/dashboard",
+      "name": "dashboard",
+      "component": "/dashboard/index",
+      "meta": {
+        "icon": "HomeFilled",
+        "title": "审计后台",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": true,
+        "isKeepAlive": true
+      }
+    }
+  ],
+  "msg": "成功"
+}
